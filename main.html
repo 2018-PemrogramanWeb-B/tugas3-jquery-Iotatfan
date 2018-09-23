@@ -1,36 +1,35 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-	$("#show").hide();
-    $("#gambar").click(function(){
-		$("#hide").hide();
-		$("#show").show();
-        $("#gambar").animate({
-            top: '250px'
-        });
-		$("#gambar").animate({
-			left: '250px'
-		});
-		$("#gambar").animate({
-			left: '100px',
-			top: '123px'
-		});
-		$("#gambar").animate({
-			left: '330px',
-			top: '50px'
-		});
-    });
-});
-</script> 
-</head>
-<body>
-
-<p id="hide">Click Me !! Click Me !!!</p>
-<p id="show">Catch Me !!</p>
-<div></div>
-<img id="gambar" src="weeb.png" style="height:100px;width:100px;position:absolute">
-</body>
+<html lang="en">
+	<head>
+		<title>Click Me Click Me Click Me</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script> 
+			$(document).ready(function(){
+				$("#show").hide();
+			    $("#gambar").click(function(){
+					$("#hide").hide();
+					$("#show").show();
+					$("#gambar").animate({
+						top: '250px'
+					});
+					$("#gambar").animate({
+						left: '250px'
+					});
+					$("#gambar").animate({
+						left: '100px',
+						top: '123px'
+					});
+					$("#gambar").animate({
+						left: '330px',
+						top: '50px'
+					});
+			    });
+			});
+		</script> 
+	</head>
+	<body>
+		<p id="hide">Click Me !! Click Me !!!</p>
+		<p id="show">Catch Me !!</p>
+		<img id="gambar" src="weeb.png" alt="Ini Gambar" style="height:100px;width:100px;position:absolute">
+	</body>
 </html>
