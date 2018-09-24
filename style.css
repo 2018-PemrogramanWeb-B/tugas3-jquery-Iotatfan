@@ -1,6 +1,6 @@
 ﻿body
 {
-	background-color: lightgreen;
+	background-image: url(snow.png);
 }
 
 #gambar {
@@ -10,19 +10,23 @@
 
 p {
 	text-align: left;
-	color: darkblue;
+	color: lightyellow;
+	font-size: 25px;
 }
 
-table {
+table, th, td {
 	border-collapse: collapse;
 	font-family: Abadi, sans-serif;
+	padding: 5px;
+	border: 2px solid white
 }
 
-th, td {
-	padding: 5px;
-	border: 2px solid black;
+th {
+	text-align: center;
+	color: white;
 }
 
 td {
 	width: 150px;
+	color: white;
 }
