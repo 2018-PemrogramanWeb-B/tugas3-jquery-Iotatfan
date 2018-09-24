@@ -13,13 +13,16 @@ p {
 	color: darkblue;
 }
 
-table, th, td {
+table {
+	border-collapse: collapse;
+	font-family: Abadi, sans-serif;
+}
+
+th, td {
 	padding: 5px;
 	border: 2px solid black;
-	border-collapse: collapse;
-	width: 300px;
 }
 
 td {
-	width: 100px;
+	width: 150px;
 }
