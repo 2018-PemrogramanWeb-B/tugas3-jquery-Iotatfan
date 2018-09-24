@@ -6,10 +6,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script> 
 			$(document).ready(function(){
-				$("#show").hide();
+				$("#show,#tar,#userin").hide();
 			    $("#gambar").click(function(){
 					$("#hide").hide();
-					$("#show").show();
+					$("#show,#tar,#userin").show();
 					$("#gambar").animate({
 						top: '250px'
 					});
@@ -45,9 +45,9 @@
 		<img id="gambar" src="weeb.png" alt="Ini Gambar">
 		
 		<input id="userin" type="text" placeholder="Cari Yuk...">
-		<br></br>
+		<br><br>
 
-		<table>
+		<table id="tar">
 			<thead>
 				<tr>
 					<td>Makanan</td>
