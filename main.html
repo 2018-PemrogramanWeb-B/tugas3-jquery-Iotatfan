@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" >
 		<title>Click Me Click Me Click Me</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script> 
@@ -26,10 +27,59 @@
 			    });
 			});
 		</script> 
+		<script>
+			$(document).ready(function(){
+				$('#userin').on("keyup",function() {
+					var value = $(this).val().toLowerCase();
+					$("#tabel tr").filter(function() {
+						$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+					});
+				});
+			});
+		</script>
 	</head>
+
 	<body>
 		<p id="hide">Click Me !! Click Me !!!</p>
 		<p id="show">Catch Me !!</p>
-		<img id="gambar" src="weeb.png" alt="Ini Gambar" style="height:100px;width:100px;position:absolute">
+		<img id="gambar" src="weeb.png" alt="Ini Gambar">
+		
+		<input id="userin" type="text" placeholder="Cari Yuk...">
+		<br></br>
+
+		<table>
+			<thead>
+				<tr>
+					<td>Makanan</td>
+					<td>Jenis</td>
+				</tr>
+			</thead>
+			<tbody id="tabel">
+				<tr>
+					<td>Gethuk</td>
+					<td>Kue</td>
+				</tr>
+				<tr>
+					<td>Lumpia</td>
+					<td>Gorengan</td>
+				</tr>
+				<tr>
+					<td>Putu</td>
+					<td>Kue</td>
+				</tr>
+				<tr>
+					<td>Tahu isi</td>
+					<td>Gorengan</td>
+				</tr>
+				<tr>
+					<td>Dadar Jagung</td>
+					<td>Gorengan</td>
+				</tr>
+				<tr>
+					<td>Martabak</td>
+					<td>Gorengan</td>
+				</tr>
+			</tbody>
+		</table>
 	</body>
 </html>
