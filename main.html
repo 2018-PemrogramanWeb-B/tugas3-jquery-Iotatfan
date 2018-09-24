@@ -6,7 +6,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script> 
 			$(document).ready(function(){
-				$("#show,#tar,#userin").hide();
+				$("#show,#tar,#userin,#oops").hide();
 			    $("#gambar").click(function(){
 					$("#hide").hide();
 					$("#show,#tar,#userin").show();
@@ -25,6 +25,10 @@
 						top: '50px'
 					});
 			    });
+				$("#show").click(function(){
+					$("#show,#gambar").hide();
+					$("#oops").show();
+				});
 			});
 		</script> 
 		<script>
@@ -42,6 +46,7 @@
 	<body>
 		<p id="hide">Click Me !! Click Me !!!</p>
 		<p id="show">Catch Me !!</p>
+		<p id="oops">Ooops!! :( </p>
 		<img id="gambar" src="weeb.png" alt="Ini Gambar">
 		
 		<input id="userin" type="text" placeholder="Cari Yuk...">
